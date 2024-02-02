@@ -1,7 +1,5 @@
 package main
 
-import "log"
-
 func rotate(nums []int, k int) {
 	n := len(nums)
 	if n == 0 || k <= 0 {
@@ -27,16 +25,4 @@ func rotate(nums []int, k int) {
 	// Reverse the remaining elements
 	reverse(nums, k, n-1)
 
-}
-
-// Test
-
-func main() {
-
-	nums := []int{1, 2, 3, 4, 5, 6, 7}
-	k := 3
-
-	rotate(nums, k)
-
-	log.Println(nums)
 }
